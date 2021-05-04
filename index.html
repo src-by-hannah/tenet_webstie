@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+web link: tenetfilm.dothome.co.kr
+Made by Hannah Noh
+last Updated on 2020.06.21
+
+Reference
+- CodingNepal, Side Menu Bar with sub-menu using HTML CSS & Javascript, <https://www.codingnepalweb.com/2020/05/side-menu-bar-with-submenu.html>
+- CodingNepal, Animated Profile Card Design in HTML & CSS, <https://www.codingnepalweb.com/2020/05/animated-profile-card-design-in-html-css.html>
+- CodingNepal, Pure CSS Responsive Cards Design with Hover Effect, <https://www.codingnepalweb.com/2020/04/pure-css-responsive-card.html>
+-->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+	<title>TENET Film</title>
+	<meta name="description" content="2020년 여름, 크리스토퍼 놀란 감독의 새로운 대작! 영화 TENET에 관한 웹 사이트입니다.">
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<!-- CSS -->
+	<!--default css(웹 브라우저마다 조금씩 스타일이 다르므로 default 지정)-->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <div id="home">
+    <div> <!-- MENU BAR -->
+      <!-- menu bar button -->
+      <div class="btn">
+        <span class="fas fa-bars"></span>
+      </div>
+
+      <!-- menu bar 내용 -->
+      <nav class="sidebar">
+        <div class="text">TENET</div>
+
+        <ul>
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="videos.html">VIDEOS</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li id="proposal"><a href="https://drive.google.com/file/d/188X6cUk8m2jw-GIowB_PSUIw4SNnsRtw/view?usp=sharing" target="_blank">기획서</a><li>
+        </ul>
+      </nav>
+    <div>
+
+    <section class="home-content"> <!-- 홈에 들어갈 내용 -->
+      <!-- 디데이 카운트 -->
+      <div class="home-d-day">
+        <p>Coming to theater</p>
+        <p id="come-out-day">2020.07.31</p>
+
+        <script>
+          var now = new Date();
+          var today = now.getDate();
+
+          if(today>=20 && (now.getMonth()+1==6)) {
+            var dDay = 30-today+31;
+          }
+          else if(now.getMonth()+1 == 7){
+            var dDay = 31-today;
+          }
+          else {
+            var dDay = 0;
+          }
+
+          if (dDay==0) {
+            document.write("D-DAY");
+          }
+          else if (dDay<10) {
+            document.write("D - 0"+dDay);
+          }
+          else{
+            document.write("D - "+dDay);
+          }
+        </script>
+      </div>
+
+      <!-- 타이틀 -->
+      <div class="home-title">
+        <a href="https://www.tenetfilm.com/" target="_blank">TENET</a>
+      </div>
+    </section>
+
+    <!-- 스크립트 -->
+    <script type="text/javascript" src="js/menu-bar.js"></script>
+
+  </div>
+</body>
+</html>

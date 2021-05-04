@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>TENET Film - Videos</title>
+	<meta name="description" content="2020년 여름, 크리스토퍼 놀란 감독의 새로운 대작! 영화 TENET에 관한 웹 사이트입니다.">
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<!-- CSS -->
+	<!--default css(웹 브라우저마다 조금씩 스타일이 다르므로 default 지정)-->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+	<style>
+		* {box-sizing: border-box}
+		body {font-family: Verdana, sans-serif; margin:0}
+		img {vertical-align: middle;}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<div id="videos" class="big-bg">
+		<header class="main-header wrapper">
+			<div> <!-- MENU BAR -->
+	      <!-- menu bar button -->
+	      <div class="btn">
+	        <span class="fas fa-bars"></span>
+	      </div>
+
+	      <!-- menu bar 내용 -->
+	      <nav class="sidebar">
+	        <div class="text">TENET</div>
+
+	        <ul>
+	          <li><a href="index.html">HOME</a></li>
+	          <li><a href="about.html">ABOUT</a></li>
+	          <li class="active"><a href="videos.html">VIDEOS</a></li>
+	          <li><a href="news.html">NEWS</a></li>
+	          <li><a href="gallery.html">GALLERY</a></li>
+						<li id="proposal"><a href="https://drive.google.com/file/d/188X6cUk8m2jw-GIowB_PSUIw4SNnsRtw/view?usp=sharing" target="_blank">기획서</a><li>
+	        </ul>
+	      </nav>
+	    <div>
+		</header>
+
+		<script type="text/javascript" src="js/menu-bar.js"></script>
+
+		<div class="wrapper">
+			<h2 class="page-title">VIDEOS</h2>
+		</div><!-- /.wrapper -->
+	</div><!-- /#news -->
+
+	<section class="videos-content">
+		<div class="videos-trailer">
+			<h2>예고편</h2>
+			<br>
+			<div class="videos-container">
+				<div class="videos-mySlides videos-fade">
+				  <iframe id="player1" width="1280" height="720" src="https://www.youtube.com/embed/V5KeJhi_bFI?enablejsapi=1&version=3&playerapiid=ytplayer&ecver=2&vq=hd720&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<div class="videos-mySlides videos-fade">
+				  <iframe id="player2" width="1280" height="720" src="https://www.youtube.com/embed/bsoNKZjpZ2A?enablejsapi=1&version=3&playerapiid=ytplayer&ecver=2&vq=hd720&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<a class="videos-prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="videos-next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+
+			<br>
+
+			<div style="text-align:center">
+			  <span class="videos-dot" onclick="currentSlide(1)"></span>
+			  <span class="videos-dot" onclick="currentSlide(2)"></span>
+			</div>
+
+			<script type="text/javascript" src="js/videos-slider.js"></script>
+			<br>
+			<br>
+		</div>
+	</section>
+
+	<footer>
+		<div class="wrapper">
+			<p><small>&copy; Hannah Noh</small></p>
+		</div>
+	</footer>
+</body>
+</html>

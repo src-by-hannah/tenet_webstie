@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>TENET Film - Gallery</title>
+	<meta name="description" content="2020년 여름, 크리스토퍼 놀란 감독의 새로운 대작! 영화 TENET에 관한 웹 사이트입니다.">
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<!-- CSS -->
+	<!--default css(웹 브라우저마다 조금씩 스타일이 다르므로 default 지정)-->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<style>
+		body {
+			font-family: Arial;
+			margin: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="gallery" class="big-bg">
+		<header class="main-header wrapper">
+			<div> <!-- MENU BAR -->
+	      <!-- menu bar button -->
+	      <div class="btn">
+	        <span class="fas fa-bars"></span>
+	      </div>
+
+	      <!-- menu bar 내용 -->
+	      <nav class="sidebar">
+	        <div class="text">TENET</div>
+
+	        <ul>
+	          <li><a href="index.html">HOME</a></li>
+	          <li><a href="about.html">ABOUT</a></li>
+	          <li><a href="videos.html">VIDEOS</a></li>
+	          <li><a href="news.html">NEWS</a></li>
+	          <li class="active"><a href="gallery.html">GALLERY</a></li>
+						<li id="proposal"><a href="https://drive.google.com/file/d/188X6cUk8m2jw-GIowB_PSUIw4SNnsRtw/view?usp=sharing" target="_blank">기획서</a><li>
+	        </ul>
+	      </nav>
+	    <div>
+		</header>
+
+		<div class="wrapper">
+			<h2 class="page-title">GALLERY</h2>
+		</div><!-- /.wrapper -->
+	</div><!-- /#gallery -->
+
+	<section class="gallery-container">
+		<div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery1.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery2.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery3.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery4.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery5.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery6.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery7.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery8.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery9.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery10.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery11.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery12.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery13.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery14.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery15.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery16.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery17.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery18.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery19.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery20.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery21.jpg" style="width:100%">
+			</div>
+			<div class="gallery-mySlides">
+				<img src="images/gallery/gallery22.jpg" style="width:100%">
+			</div>
+
+			<a class="gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="gallery-next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="gallery-caption-container">
+				<p id="gallery-caption"></p>
+			</div>
+		</div>
+		<br><br><br>
+
+		<div class="gallery-row">
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery1.jpg" style="width:100%" onclick="currentSlide(1)" alt="1 / 22">
+				<p>1</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery2.jpg" style="width:100%" onclick="currentSlide(2)" alt="2 / 22">
+				<p>2</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery3.jpg" style="width:100%" onclick="currentSlide(3)" alt="3 / 22">
+				<p>3</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery4.jpg" style="width:100%" onclick="currentSlide(4)" alt="4 / 22">
+				<p>4</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery5.jpg" style="width:100%" onclick="currentSlide(5)" alt="5 / 22">
+				<p>5</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery6.jpg" style="width:100%" onclick="currentSlide(6)" alt="6 / 22">
+				<p>6</p>
+			</div><!-- -->
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery7.jpg" style="width:100%" onclick="currentSlide(7)" alt="7 / 22">
+				<p>7</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery8.jpg" style="width:100%" onclick="currentSlide(8)" alt="8 / 22">
+				<p>8</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery9.jpg" style="width:100%" onclick="currentSlide(9)" alt="9 / 22">
+				<p>9</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery10.jpg" style="width:100%" onclick="currentSlide(10)" alt="10 / 22">
+				<p>10</p>
+			</div>
+			<div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery11.jpg" style="width:100%" onclick="currentSlide(11)" alt="11 / 22">
+				<p>11</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery12.jpg" style="width:100%" onclick="currentSlide(12)" alt="12 / 22">
+				<p>12</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery13.jpg" style="width:100%" onclick="currentSlide(13)" alt="13 / 22">
+				<p>13</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery14.jpg" style="width:100%" onclick="currentSlide(14)" alt="14 / 22">
+				<p>14</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery15.jpg" style="width:100%" onclick="currentSlide(15)" alt="15 / 22">
+				<p>15</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery16.jpg" style="width:100%" onclick="currentSlide(16)" alt="16 / 22">
+				<p>16</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery17.jpg" style="width:100%" onclick="currentSlide(17)" alt="17 / 22">
+				<p>17</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery18.jpg" style="width:100%" onclick="currentSlide(18)" alt="18 / 22">
+				<p>18</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery19.jpg" style="width:100%" onclick="currentSlide(19)" alt="19 / 22">
+				<p>19</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery20.jpg" style="width:100%" onclick="currentSlide(20)" alt="20 / 22">
+				<p>20</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery21.jpg" style="width:100%" onclick="currentSlide(21)" alt="21 / 22">
+				<p>21</p>
+			</div><div class="gallery-column">
+				<img class="gallery-demo gallery-cursor" src="images/gallery/gallery22.jpg" style="width:100%" onclick="currentSlide(22)" alt="22 / 22">
+				<p>22</p>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/gallery-slider.js"></script>
+
+	<script type="text/javascript" src="js/menu-bar.js"></script>
+	<br>
+	<br>
+
+	<footer>
+		<div class="wrapper">
+			<p><small>&copy; Hannah Noh</small></p>
+		</div>
+	</footer>
+</body>
+</html>
